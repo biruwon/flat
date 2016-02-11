@@ -1,0 +1,18 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Add Item
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="add-item">
+  <ion-list>
+
+    <form (ngSubmit)="saveItem()">
+    <ion-item>
+      <ion-label floating>Item</ion-label>
+      <ion-input type="text" [(ngModel)]="item" ></ion-input>
+    </ion-item>
+    <button fab fab-right fab-bottom ><ion-icon name="checkmark"></ion-icon></button>
+    </form>
+  </ion-list>
+</ion-content>
