@@ -16,12 +16,21 @@ export class ShoppingListPage {
     });
   }
 
-  addItem(){
+  addItem()
+  {
     this.nav.push(AddItemPage, {ShoppingListPage: this});
   }
 
-  saveItem(item){
+  saveItem(item)
+  {
     this.items.push(item);
     this.dataService.save(item);
+  }
+
+  removeItem(item)
+  {
+    var elementToRemove = this.items.indexOf(item);
+    this.items.splice(elementToRemove, 1);
+    this.dataService.remove(item);
   }
 }

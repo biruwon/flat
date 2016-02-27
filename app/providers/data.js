@@ -28,4 +28,11 @@ export class DataService{
         this.storage.set('items', items);
     }
   }
+
+  remove(item){
+    var elementToRemove = this.data.indexOf(item);
+    this.data.splice(elementToRemove, 1);
+    let items = JSON.stringify(this.data);
+    this.storage.set('items', items);
+  }
 }
