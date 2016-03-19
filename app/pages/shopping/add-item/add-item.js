@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams} from 'ionic/ionic';
+import {Page, NavController, NavParams} from 'ionic-angular';
 
 @Page({
   templateUrl: 'build/pages/shopping/add-item/add-item.html',

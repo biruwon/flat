@@ -1,4 +1,4 @@
-import {App, Platform, Config} from 'ionic/ionic';
+import {App, Platform, Config} from 'ionic-angular';
 import {TabsPage} from './pages/tabs/tabs';
 import {DataService} from './providers/data';
 

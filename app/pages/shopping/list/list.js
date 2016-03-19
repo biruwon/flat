@@ -1,4 +1,4 @@
-import {Page, NavController} from 'ionic/ionic';
+import {Page, NavController} from 'ionic-angular';
 import {AddItemPage} from '../add-item/add-item';
 import {DataService} from '../../../providers/data';
 
